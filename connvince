@@ -1,0 +1,3 @@
+print("hello")
+a=input("enter you mother name:")
+print("saasrikal",a,"ji Amber nu roti bna do please")
