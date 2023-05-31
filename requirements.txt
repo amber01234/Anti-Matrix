@@ -12,7 +12,7 @@ fpdf==1.7.2
 gitdb==4.0.10
 GitPython==3.1.31
 lottie==0.7.0
-numpy==1.23.5
+numpy
 pandas==2.0.1
 Pillow==9.5.0
 pip==23.1.2
