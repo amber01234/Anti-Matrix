@@ -6,13 +6,11 @@ def main():
     if choice == "Payment number":
         # st.subheader("")
         # new_user = st.text_input("Username")
-        payment_id = st.text_input("Payment number",type='password')
+	email_sender=st.text_input("E-mail(Enter the E-mail id by which you sent the PDF of your Ebook")
+        payment_id = st.text_input("Payment number")
 
         if st.button("Done"):print(payment_id)
-            # create_usertable()
-            # add_userdata(payment_id)
-            # st.success("You will be getting paid wheneve your ebook or graphic is sold. Trust us .")
-            # # st.info("Go to Login Menu to login")
+           
 import hashlib
 def make_hashes(password):
 	return hashlib.sha256(str.encode(password)).hexdigest()
