@@ -1,4 +1,4 @@
-pip install pip==23.1.2
+
 altair==3.2.0
 bcrypt==4.0.1
 beautifulsoup4==4.12.2
