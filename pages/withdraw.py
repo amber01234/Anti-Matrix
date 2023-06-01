@@ -10,6 +10,14 @@ def main():
         payment_id = st.text_input("Payment number")
 
         if st.button("Done"):print(payment_id)
+def main():
+	email=["Email"]
+	email_sender=st.text_input("""Email(Enter the E-mail from which you sent 
+	The PDF file of your E-book.)
+	"""0)
+	if st.button("Done"):print(email_sender)
+	
+		
            
 import hashlib
 def make_hashes(password):
