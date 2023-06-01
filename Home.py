@@ -25,9 +25,11 @@ background-repeat: repeat;
 
 #  #--------- HEADER SECTION----------------
 with st.container():
-    left_column,right_column=st.container(2)
+    left_column,right_column=st.columns(2)
+    
     with left_column:
-         st.title("Escape the MATRIX . Get a lifestyle . ")
+    #  #--------- HEADER SECTION----------------
+      st.title("Escape the MATRIX . Get a lifestyle . ")
     #   st.subheader('''this site is a id for you which mentions you as a person who is not under MATRIX.''')
       st.write("""
       We the teenagers want to get a good lifestyle but never taught how to do so. 
@@ -36,39 +38,23 @@ some xyz amount of money , but they don't .
 This is my own experience and i want you all to put efforts in order to achieve success.
 It is my humble request that don't use this as addiction can happen .
 2-3 times a week is great .
-      
+
    """)
-
       st.subheader("You can play this legendary song and listen . You can download by clicking on 3 dots.")
-import numpy as np
 
-audio_file = open('audio/Theme.mp3', 'rb')
-audio_bytes = audio_file.read()
-
-st.audio(audio_bytes)
-
-sample_rate = 44100  
-seconds = 2  
-frequency_la = 440  
-t = np.linspace(0, seconds, seconds * sample_rate, False)
-note_la = np.sin(frequency_la * t * 2 * np.pi)
-
-# st.audio(note_la, sample_rate=sample_rate)
-with right_column:
-    url = requests.get(
-        "https://assets7.lottiefiles.com/packages/lf20_OdVhgq.json")
-     url_json = dict()
-     if url.status_code == 200:
-         url_json = url.json()
-     else:
-        print("Error in URL")
+   # st.audio(note_la, sample_rate=sample_rate)
+    with right_column:
+       url = requests.get("https://assets7.lottiefiles.com/packages/lf20_OdVhgq.json")
+       url_json = dict()
+       if url.status_code == 200:url_json = url.json()
+       else: print("Error in URL")
   
   
 # st.title("Adding Lottie Animation in Streamlit WebApp")
   
-     st_lottie(url_json,
+       st_lottie(url_json,
           # change the direction of our animation
-          reverse=True,
+          reverse=False,
           # height and width of animation
           height=400,  
           width=400,
@@ -81,15 +67,30 @@ with right_column:
            # THis is just to uniquely identify the animation
           key='Car' 
           )
-      st.subheader("Quotes.....")
-      st.write("""Indeed, the self-made millionaire is a shining example of what can 
+       st.subheader("Quotes.....")
+       st.write("""Indeed, the self-made millionaire is a shining example of what can 
                 be for a great many of us dreamers. So, in honor of those who started
                  from the same humble beginnings as the rest of us, but have managed to claw their way
                  to the financial status we all deep down aspire to achieve, we've pulled together this list 
                  of catalyzing quotes from a handful of well-known self-made millionaires. May they inspire you 
                 to continue to strive towards your journey of becoming rich and achieving the self-made
                  millionaire status.
-                """)  
+                """)    
+import numpy as np
+audio_file = open('audio/Theme.mp3', 'rb')
+audio_bytes = audio_file.read()
+ 
+st.audio(audio_bytes)
+
+sample_rate = 44100  
+seconds = 2  
+frequency_la = 440  
+t = np.linspace(0, seconds, seconds * sample_rate, False)
+note_la = np.sin(frequency_la * t * 2 * np.pi)
+video_file = open('video/rich.mp4', 'rb')
+video_bytes = video_file.read()
+     
+st.video(video_bytes)
 
     
 
