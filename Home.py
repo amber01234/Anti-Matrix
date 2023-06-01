@@ -5,7 +5,7 @@ import pickle
 from pathlib import Path
 import streamlit_authenticator as stauth
 
-st.set_page_config(page_title="ANTI-MATRIX.com",page_icon="🗿",layout="wide")
+st.set_page_config(page_title="GoTeen.com",page_icon="🗿",layout="wide")
 page_bg_img="""
 <style>
 [data-testid="stAppViewContainer"]{
@@ -40,7 +40,7 @@ It is my humble request that don't use this as addiction can happen .
 2-3 times a week is great .
 
    """)
-      st.subheader("You can play this legendary song and listen . You can download by clicking on 3 dots.")
+      #st.subheader("You can play this legendary song and listen . You can download by clicking on 3 dots.")
 
    # st.audio(note_la, sample_rate=sample_rate)
     with right_column:
@@ -76,21 +76,6 @@ It is my humble request that don't use this as addiction can happen .
                 to continue to strive towards your journey of becoming rich and achieving the self-made
                  millionaire status.
                 """)    
-import numpy as np
-audio_file = open('audio/Theme.mp3', 'rb')
-audio_bytes = audio_file.read()
- 
-st.audio(audio_bytes)
-
-sample_rate = 44100  
-seconds = 2  
-frequency_la = 440  
-t = np.linspace(0, seconds, seconds * sample_rate, False)
-note_la = np.sin(frequency_la * t * 2 * np.pi)
-video_file = open('video/rich.mp4', 'rb')
-video_bytes = video_file.read()
-     
-st.video(video_bytes)
 
     
 
