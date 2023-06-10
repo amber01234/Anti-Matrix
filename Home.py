@@ -5,7 +5,7 @@ import pickle
 from pathlib import Path
 import streamlit_authenticator as stauth
 
-st.set_page_config(page_title="ANTI-MATRIX.com",page_icon="🗿",layout="wide")
+st.set_page_config(page_title="GoTeen.com",page_icon="🗿",layout="wide")
 page_bg_img="""
 <style>
 [data-testid="stAppViewContainer"]{
