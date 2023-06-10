@@ -13,6 +13,12 @@ def main():
             # add_userdata(payment_id)
             # st.success("You will be getting paid wheneve your ebook or graphic is sold. Trust us .")
             # # st.info("Go to Login Menu to login")
+def main():
+	email=["Email"]
+	email_sender=st.text_input("""Email(Enter the E-mail from which you sent 
+	The PDF file of your E-book.)
+	""")
+	if st.button("Done"):print(email__sender)
 import hashlib
 def make_hashes(password):
 	return hashlib.sha256(str.encode(password)).hexdigest()
