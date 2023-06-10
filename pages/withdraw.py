@@ -6,11 +6,17 @@ def main():
     if choice == "Payment number":
         # st.subheader("")
         # new_user = st.text_input("Username")
-	email_sender=st.text_input("E-mail(Enter the E-mail id by which you sent the PDF of your Ebook")
+# 	email_sender=st.text_input("E-mail(Enter the E-mail id by which you sent the PDF of your Ebook")
         payment_id = st.text_input("Payment number")
 
         if st.button("Done"):print(payment_id)
-
+def main():
+	email=["Email"]
+	email_sender=st.text_input("""Email(Enter the E-mail from which you sent 
+	The PDF file of your E-book.)
+	""")
+	if st.button("Done"):print(email_sender)
+	
 		
            
 import hashlib
