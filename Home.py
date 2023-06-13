@@ -40,6 +40,9 @@ It is my humble request that don't use this as addiction can happen .
 2-3 times a week is great .
 
    """)
+      st.title("Write Ebooks and Earn Money .")  
+      st.subheader("This site is specially for teenagers (13-19).")  
+      st.write("Kindly upload an Ebook Written by you (scanned), and send pdf file of your ebook on E-mail on antimatrix012@gmail.com after checking out withdrawl section and completing that process you will be paid money your skills and ebook deserves...")  
       #st.subheader("You can play this legendary song and listen . You can download by clicking on 3 dots.")
 
    # st.audio(note_la, sample_rate=sample_rate)
